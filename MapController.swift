@@ -32,7 +32,7 @@ class MapController: UIViewController {
         
         
         view.backgroundColor = UIColor.blue
-        GMSServices.provideAPIKey("your_key_here")
+        GMSServices.provideAPIKey("AIzaSyAYR0vkc5GULJwkcBvvQ5VQ603dpSJ6rXM")
         
         //20.7321983,-103.3736167,16.05
         let camera = GMSCameraPosition.camera(withLatitude: 20.7321983, longitude: -103.3736167, zoom: 14.05)
@@ -63,6 +63,10 @@ class MapController: UIViewController {
     //we have a radius
     //we have the user position
     //set of 20 positions
+    
+    //var point = Point<String>(x: 1, y:2, value, "Juan")
+    //var list : [Point<String>] = [Point<String> (x:2.0, y: 3.0), Point<String>(x:3.0, y:4.0)]
+    
     
     //Point
     //longitud

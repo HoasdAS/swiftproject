@@ -68,7 +68,9 @@ class LoginController: UIViewController {
     let imageIcon : UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "penguin")
-        image.image = image.image!.withRenderingMode(.alwaysTemplate)
+        if let imageUnwrapped = image.image {
+            image.image = imageUnwrapped.withRenderingMode(.alwaysTemplate)
+        }
         image.tintColor = .white
         image.contentMode = .scaleAspectFill
         image.translatesAutoresizingMaskIntoConstraints = false
